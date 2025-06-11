@@ -9,7 +9,7 @@ describe("Express app", () => {
     expect(app).toBeDefined();
   });
   it("responds to requests", async () => {
-    const response = await request(app).get("/");
+    const response = await request(app).get("/employees/random");
     expect(response).toBeDefined();
   });
 });
